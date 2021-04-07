@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- My CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+    
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap" rel="stylesheet"> 
+
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+          <h1 id="title">freeCodeCamp Survey Form</h1>
+          <p id="description"><i>Thank you for taking the time to help us improve the platform<i></p>
+        </header>
+            
+        <!-- Survey Form -->
+        <form id="survey-form">
+         
+          <div class="form-group">
+            <label for="name" id="name-label">Name</label><br>
+            <input 
+                   type="text" 
+                   id="name" 
+                   placeholder="Enter your name" 
+                   class="form-control"
+                   required/>
+          </div>
+          <div class="form-group">
+            <label for="email" id="email-label">Email</label><br>
+            <input 
+                   type="email" 
+                   id="email" 
+                   placeholder="Enter your Email" 
+                   class="form-control"
+                   required/>
+          </div>
+          <div class="form-group">
+            <label for="number" id="number-label">Age<span>(optional)</span></label><br>
+            <input 
+                   type="number" 
+                   id="number"
+                   min="6"
+                   max="100"
+                   placeholder="Age" 
+                   class="form-control"/>
+          </div>
+          
+        <!-- Survey Form: Dropdown list -->    
+          <div class="form-group">
+            <p class="description">Which option best describes your current role?</p>
+            <select id="dropdown" class="form-control">
+              <option selected="selected">Select current role</option>
+              <option>Student</option>
+              <option>Full Time Job</option>
+              <option>Full Time Learner</option>
+              <option>Prefer not to say</option>
+              <option>Other</option>
+            </select>
+          </div>
+          
+       <!-- Survey Form: Radio buttons -->   
+          <div class="form-group">
+            <p class="description">Would you recommend freeCodeCamp to a friend?</p>
+            <label for="definitely">
+              <input 
+                     id="definitely" 
+                     type="radio"
+                     value="definitely"
+                     name="radio-buttons"
+                     class="input-radio"
+                     checked
+              />Definitely</label>
+            <br>
+            <label for="maybe">
+              <input 
+                     id="maybe" 
+                     type="radio"
+                     value="maybe"
+                     name="radio-buttons"
+                     class="input-radio"
+              />Maybe</label>
+            <br>
+            <label for="not-sure">
+              <input 
+                     id="not-sure" 
+                     type="radio"
+                     value="not-sure"
+                     name="radio-buttons"
+                     class="input-radio"
+              />Not sure</label>
+        </div>
+        
+        <!-- Survey Form: Dropdown list -->      
+          <div class="form-group">
+            <p class="description">What is your favorite feature of freeCodeCamp?</p>
+            <select class="form-control">
+              <option selected="selected">Select an option</option>
+              <option>Challenges</option>
+              <option>Projects</option>
+              <option>Community</option>
+              <option>Open Source</option>
+            </select>
+        </div>
+        
+        <!-- Survey Form: Checkbox -->  
+          <div class="form-group">
+            <p class="description">What would you like to see improved?<span>(Check all that apply)</span></p>
+            <label>
+              <input 
+                     type="checkbox" 
+                     value="front-end"
+                     class="input-checkbox"
+              />Front-end Projects</label>
+            <br>
+            <label>
+              <input 
+                     type="checkbox" 
+                     value="back-end"
+                     class="input-checkbox"
+              />Back-end Projects</label>
+            <br>
+            <label>
+              <input 
+                     type="checkbox" 
+                     value="data-visualization"
+                     class="input-checkbox"
+              />Data Visualization</label>
+            <br>
+            <label>
+              <input 
+                     type="checkbox" 
+                     value="challenges"
+                     class="input-checkbox"
+              />Challenges</label>
+            <br>
+            <label>
+              <input 
+                     type="checkbox" 
+                     value="open-source"
+                     class="input-checkbox"
+              />Open Source Community</label>
+            <br>
+            <label>
+              <input 
+                     type="checkbox" 
+                     value="glitter"
+                     class="input-checkbox"
+              />Gitter help rooms</label>
+            <br>
+            <label>
+              <input 
+                     type="checkbox" 
+                     value="videos"
+                     class="input-checkbox"
+              />Videos</label>
+            <br>
+            <label>
+              <input 
+                     type="checkbox" 
+                     value="meetups"
+                     class="input-checkbox"
+              />City Meetups</label>
+            <br>
+            <label>
+              <input 
+                     type="checkbox" 
+                     value="wiki"
+                     class="input-checkbox"
+              />Wiki</label>
+            <br>
+            <label>
+              <input 
+                     type="checkbox" 
+                     value="forum"
+                     class="input-checkbox"
+              />Forum</label>
+            <br>
+            <label>
+              <input 
+                     type="checkbox" 
+                     value="additional-courses"
+                     class="input-checkbox"
+              />Additional Courses</label>
+         </div>
+      
+        <!-- Survey Form: Additional comments text area -->  
+          <div class="form-group">
+            <p class="description">Any comments or suggestions?</p>
+            <textarea
+                    id="comments"
+                    name="comment"
+                    class="input-textarea"
+                    placeholder="Enter your comments here"
+            ></textarea>
+          </div>
+      
+        <!-- Survey Form: Submit button --> 
+          <div class="form-group">
+            <button 
+                    id="submit" 
+                    type="submit"
+                    class="submit-button description"
+            >Submit</button>
+          </div>
+      
+        </form>
+      </div>
+</body>
+</html>
